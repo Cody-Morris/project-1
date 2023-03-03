@@ -1,10 +1,10 @@
 # Creates the trainee in azure
 resource "azuread_user" "trainee" {
   user_name = "codymorris@example.com"
-  display_name = "C Morris"
+  display_name = "C. Morris"
 }
 
-# Creates the trainer in azure and requires them to change password during the next login
+# Use correct argument in your configuration to force your trainer to change their passwords when s/he logins
 resource "azuread_user" "trainer" {
   user_name = "ibrahimozbekler@examplecorp.com"
   display_name = "I. Ozbekler"
